@@ -9,6 +9,22 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(title),
+        actions: <Widget>[
+          TextButton(
+            onPressed: () {},
+            child: const Text("contact"),
+            style: TextButton.styleFrom(
+              primary: Colors.white,
+            ),
+          ),
+          TextButton(
+            onPressed: () {},
+            child: const Text("gallery"),
+            style: TextButton.styleFrom(
+              primary: Colors.white,
+            ),
+          ),
+        ],
       ),
       body: Center(
         child: Column(
