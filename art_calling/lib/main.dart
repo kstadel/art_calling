@@ -1,5 +1,6 @@
+import 'package:art_calling/screens/contact_screen.dart';
+import 'package:art_calling/screens/gallery_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 
 import 'package:art_calling/router/router_widget.dart';
 import 'package:art_calling/screens/home_screen.dart';
@@ -15,13 +16,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: '/',
+      routes: {
+        '/': (context) => const HomeScreen(
+              title: 'home sweet home!',
+            ),
+        '/contact': (context) => const ContactScreen(
+              title: 'contact sweet contact!',
+            ),
+        '/gallery': (context) => const GalleryScreen(title: 'galllerrryyyyy!')
+      },
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.grey,
-      ),
-      home: const HomeScreen(
-        title: 'Home!',
       ),
     );
   }

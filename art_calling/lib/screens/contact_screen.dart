@@ -1,3 +1,4 @@
+import 'package:art_calling/screens/widgets/appbar_nav.dart';
 import 'package:flutter/material.dart';
 
 class ContactScreen extends StatefulWidget {
@@ -13,8 +14,8 @@ class _ContactScreenState extends State<ContactScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
+      appBar: AppbarNav(
+        title: widget.title,
       ),
       body: Center(
         child: Column(
