@@ -1,3 +1,4 @@
+import 'package:art_calling/screens/widgets/appbar_nav.dart';
 import 'package:flutter/material.dart';
 
 class GalleryScreen extends StatefulWidget {
@@ -12,9 +13,7 @@ class _GalleryScreenState extends State<GalleryScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
+      appBar: const AppbarNav(title: 'Gallery'),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
